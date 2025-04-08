@@ -50,8 +50,11 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     const targetElement = document.querySelector(targetId)
 
     if (targetElement) {
+      // スマホ表示時はヘッダーの高さが異なるため、動的に計算
+      const headerHeight = document.getElementById("header").offsetHeight
+
       window.scrollTo({
-        top: targetElement.offsetTop - 80, // Offset for header height
+        top: targetElement.offsetTop - headerHeight,
         behavior: "smooth",
       })
     }
@@ -67,6 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 // EmailJSの初期化（自分のPublic Keyを使用）
+// emailjs is expected to be loaded via CDN or similar, so we don't need to declare it.
+// Make sure EmailJS is properly set up in your HTML file.
 emailjs.init("96ekt9SeTogWcGdJj") // ← ここは自分の公開キーに差し替え！
 
 // DOMが読み込まれたらフォーム送信イベントを設定
@@ -99,7 +104,11 @@ function createCosmicParticles() {
   const sections = document.querySelectorAll(".cosmic-particles")
 
   sections.forEach((section) => {
-    for (let i = 0; i < 50; i++) {
+    // モバイル端末では粒子の数を減らす
+    const isMobile = window.innerWidth <= 768
+    const particleCount = isMobile ? 25 : 50
+
+    for (let i = 0; i < particleCount; i++) {
       const particle = document.createElement("div")
       particle.classList.add("particle")
 
@@ -188,7 +197,7 @@ document.addEventListener("click", (e) => {
   }
 })
 
-// クリックアニメーション
+// 神秘的な演出のアニメーション
 document.head.insertAdjacentHTML(
   "beforeend",
   `
@@ -209,7 +218,45 @@ document.head.insertAdjacentHTML(
 `,
 )
 
+// ウィンドウサイズ変更時の処理
+window.addEventListener("resize", () => {
+  // モバイルメニューが開いている状態でデスクトップサイズになった場合、メニューを閉じる
+  if (window.innerWidth > 768) {
+    const menuToggle = document.querySelector(".menu-toggle")
+    const nav = document.querySelector(".nav")
+
+    if (menuToggle && nav && nav.classList.contains("active")) {
+      menuToggle.classList.remove("active")
+      nav.classList.remove("active")
+      document.body.classList.remove("menu-open")
+    }
+  }
+})
+
 // Initialize any interactive elements when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
   createCosmicParticles()
+
+  // 画像の遅延読み込み
+  const lazyImages = document.querySelectorAll("img[data-src]")
+  if ("IntersectionObserver" in window) {
+    const imageObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const img = entry.target
+          img.src = img.dataset.src
+          imageObserver.unobserve(img)
+        }
+      })
+    })
+
+    lazyImages.forEach((img) => {
+      imageObserver.observe(img)
+    })
+  } else {
+    // IntersectionObserverがサポートされていない場合のフォールバック
+    lazyImages.forEach((img) => {
+      img.src = img.dataset.src
+    })
+  }
 })
