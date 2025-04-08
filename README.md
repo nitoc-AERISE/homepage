@@ -1,6 +1,6 @@
 
 # webページの内容（要約）
-https://ntioc-aerise.github.io/homepage/
+[https://ntioc-aerise.github.io/homepage/](https://nitoc-aerise.github.io/homepage/)
 ---
 
 ## 航空宇宙同好会
