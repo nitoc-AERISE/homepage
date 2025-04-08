@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>航空宇宙同好会</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="cosmic-title">
+        <h1><span class="glow-text">航空宇宙同好会</span></h1>
+        <div class="orbit-line"></div>
+      </div>
+      <p>ー　沖縄から、航空宇宙産業の発展へ。　ー</p>
+      <a href="#about" class="btn btn-primary cosmic-btn">
+        詳細を見る
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+          <path d="M5 12h14"></path>
+          <path d="m12 5 7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-glow">
+            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+            <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+          </svg>
+          <span>航空宇宙同好会</span>
+        </div>
+        <button class="menu-toggle" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#members">Members</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section bg-dark">
+    <div class="container">
+      <h2 class="section-title"><span>私たちについて</span></h2>
+      <div class="about-grid">
+        <div>
+          <p>航空宇宙同好会は、沖縄工業高等専門学校における航空分野や宇宙分野に興味を持つ学生たちが集まる団体です。</p>
+          <p>私たちは、航空機や宇宙開発に関する知識を深め、実際にモデルロケットや缶サットの製作、実験などを行い、技術を学びながら探求しています。会員同士の協力を通じて、技術力を高めるとともに、創造力や問題解決能力を育むことを目指しています。</p>
+          <p>また、航空宇宙関連のイベントや大会に積極的に参加し、実際の技術や成果を他の学生たちと共有することにも力を入れています。</p>
+        </div>
+        <div class="about-image cosmic-border">
+          <img src="images/AERISE_tt.jpg" alt="AERISE_tt">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section id="activities" class="section">
+    <div class="container">
+      <h2 class="section-title"><span>主な活動内容</span></h2>
+      <div class="activities-grid">
+        <div class="activity-card">
+          <div class="activity-icon">
+            <!-- ロケットアイコン -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-glow">
+              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+              <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+              <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+            </svg>
+          </div>
+          <h3>ロケット</h3>
+          <p>モデルロケットやパラシュートを製作し、種子島ロケットコンテスト等の大会に出場しています。</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">
+            <!-- 天体観測アイコン -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-glow">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="4"></circle>
+              <line x1="21.17" x2="12" y1="8" y2="12"></line>
+              <line x1="3.95" x2="8.54" y1="6.06" y2="14"></line>
+              <line x1="10.88" x2="15.46" y1="21.94" y2="14"></line>
+            </svg>
+          </div>
+          <h3>天体観測</h3>
+          <p>望遠鏡を用いて、流星群や彗星を観測しています。</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">
+            <!-- 航空アイコン -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-glow">
+              <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path>
+            </svg>
+          </div>
+          <h3>航空</h3>
+          <p>フライトシュミレーター等を用いて航空関連の知見を深めています。</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">
+            <!-- 缶サットアイコン -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-glow">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+              <path d="M15 9l-3 3"></path>
+              <path d="M9 15l3-3"></path>
+            </svg>
+          </div>
+          <h3>缶サット</h3>
+          <p>缶サイズの模擬衛星を製作して、宇宙甲子園(缶サット部門)等の大会に出場しています。</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">
+            <!-- プラネタリウムアイコン -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-glow">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h3>プラネタリウム</h3>
+          <p>プラネタリウムソフト等を使って、宇宙分野の教育を行っています。</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">
+            <!-- CGアイコン -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-glow">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.29 7 12 12 20.71 7"></polyline>
+              <line x1="12" y1="22" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <h3>CG</h3>
+          <p>blenderやUE5等を用いて3DCG作品を製作しています。</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">
+            <!-- 広報アイコン -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-glow">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+          </div>
+          <h3>広報</h3>
+          <p>InstagramやX(旧Twitter), Webサイトの運用を行っています。</p>
+        </div>
+        <div class="activity-card">
+          <div class="activity-icon">
+            <!-- ラジコンアイコン -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-glow">
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <circle cx="10" cy="13" r="2"></circle>
+              <path d="m13.8 17.8-3.6-3.6"></path>
+            </svg>
+          </div>
+          <h3>ラジコン</h3>
+          <p>飛行ロボコンの出場を目指して作られた新しいプロジェクトです。</p>
+        </div>
+      </div>
+    </div>
+    <div class="cosmic-particles"></div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="section bg-dark">
+    <div class="container">
+      <h2 class="section-title"><span>イベント</span></h2>
+      <div class="events-list">
+        <div class="event-card">
+          <div class="event-date">
+            <span class="event-day">14~18日</span>
+            <span class="event-month">04月</span>
+          </div>
+          <div class="event-details">
+            <h3>体験入部</h3>
+            <p>各班のブース展示をしています。航空宇宙同好会の活動を覗いてみませんか？</p>
+            <div class="event-time">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-glow">
+                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                <line x1="16" x2="16" y1="2" y2="6"></line>
+                <line x1="8" x2="8" y1="2" y2="6"></line>
+                <line x1="3" x2="21" y1="10" y2="10"></line>
+              </svg>
+              <span>放課後：16:30~18:30</span>
+            </div>
+          </div>
+        </div>
+        <!-- ここからイベントを追加 -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Members Section -->
+  <section id="members" class="section">
+    <div class="container">
+      <h2 class="section-title"><span>主体メンバー</span></h2>
+      <div class="members-grid">
+        <div class="member-card">
+          <div class="member-image cosmic-border">
+            <img src="https://placehold.co/200x200/051b30/FFFFFF/png?text=no Image" alt="会長">
+          </div>
+          <h3>ニックネーム</h3>
+          <p class="glow-text">会長</p>
+        </div>
+        <div class="member-card">
+          <div class="member-image cosmic-border">
+            <img src="https://placehold.co/200x200/051b30/FFFFFF/png?text=no Image" alt="総括">
+          </div>
+          <h3>ニックネーム</h3>
+          <p class="glow-text">総括</p>
+        </div>
+        <div class="member-card">
+          <div class="member-image cosmic-border">
+            <img src="https://placehold.co/200x200/051b30/FFFFFF/png?text=no Image" alt="ロケット班リーダー">
+          </div>
+          <h3>ニックネーム</h3>
+          <p class="glow-text">ロケット班リーダー</p>
+        </div>
+        <div class="member-card">
+          <div class="member-image cosmic-border">
+            <img src="https://placehold.co/200x200/051b30/FFFFFF/png?text=no Image" alt="天体観測班リーダー">
+          </div>
+          <h3>ニックネーム</h3>
+          <p class="glow-text">天体観測班リーダー</p>
+        </div>
+        <div class="member-card">
+          <div class="member-image cosmic-border">
+            <img src="https://placehold.co/200x200/051b30/FFFFFF/png?text=no Image" alt="航空班リーダー">
+          </div>
+          <h3>ニックネーム</h3>
+          <p class="glow-text">航空班リーダー</p>
+        </div>
+        <div class="member-card">
+          <div class="member-image cosmic-border">
+            <img src="https://placehold.co/200x200/051b30/FFFFFF/png?text=no Image" alt="缶サット班リーダー">
+          </div>
+          <h3>ニックネーム</h3>
+          <p class="glow-text">缶サット班リーダー</p>
+        </div>
+        <div class="member-card">
+          <div class="member-image cosmic-border">
+            <img src="https://placehold.co/200x200/051b30/FFFFFF/png?text=no Image" alt="プラネタリウム班リーダー">
+          </div>
+          <h3>ニックネーム</h3>
+          <p class="glow-text">プラネタリウム班リーダー</p>
+        </div>
+        <div class="member-card">
+          <div class="member-image cosmic-border">
+            <img src="https://placehold.co/200x200/051b30/FFFFFF/png?text=no Image" alt="CG班リーダー">
+          </div>
+          <h3>ニックネーム</h3>
+          <p class="glow-text">CG班リーダー</p>
+        </div>
+        <div class="member-card">
+          <div class="member-image cosmic-border">
+            <img src="https://placehold.co/200x200/051b30/FFFFFF/png?text=no Image" alt="広報班リーダー">
+          </div>
+          <h3>ニックネーム</h3>
+          <p class="glow-text">広報班リーダー</p>
+        </div>
+        <div class="member-card">
+          <div class="member-image cosmic-border">
+            <img src="https://placehold.co/200x200/051b30/FFFFFF/png?text=no Image" alt="ラジコン班リーダー">
+          </div>
+          <h3>ニックネーム</h3>
+          <p class="glow-text">ラジコン班リーダー</p>
+        </div>
+      </div>
+    </div>
+    <div class="cosmic-particles"></div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-dark">
+    <div class="container">
+      <h2 class="section-title"><span>お問い合わせ</span></h2>
+      <div class="contact-grid">
+        <div>
+          <p>航空宇宙同好会に興味がありますか？お気軽にお問い合わせください。新メンバーも随時募集中です！</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-glow">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span>onct.aerospacelabo@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-glow">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <span>毎週木曜日 16:30~ 実践棟2-6</span>
+            </div>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form cosmic-gradient">
+          <div class="form-group">
+            <label for="name">名前</label>
+            <input type="text" id="name" name="from_name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="reply_to" required />
+          </div>
+          <div class="form-group">
+            <label for="message">メッセージ</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary cosmic-btn">送信</button>
+        </form>        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-glow">
+            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+            <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+          </svg>
+          <span>航空宇宙同好会</span>
+        </div>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.instagram.com/onct_aerospace?igsh=MXFzZ2huMGtwdHNvcA==" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/onct_aerospace" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-  height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ntioc-AERISE" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="copyright">
+          &copy; <span id="current-year"></span> 航空宇宙同好会 All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
