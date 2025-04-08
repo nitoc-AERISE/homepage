@@ -1,5 +1,5 @@
 
-# webページの内容
+# webページの内容（要約）
 https://ntioc-aerise.github.io/homepage/
 ---
 
